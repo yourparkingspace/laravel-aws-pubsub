@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+    name: laravel-aws-pubsub
+    description: A Laravel broadcasting driver and queue driver that broadcasts and listens to published events utilising AWS SNS, EventBridge and SQS.
+    annotations:
+        github.com/project-slug: yourparkingspace/laravel-aws-pubsub
+spec:
+    type: service
+    lifecycle: production
+    owner: parkmaven

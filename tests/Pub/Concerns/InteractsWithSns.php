@@ -32,7 +32,7 @@ trait InteractsWithSns
      * @param  \Closure|null  $mock
      * @return void
      */
-    private function mockSns(\Closure $mock = null)
+    private function mockSns(?\Closure $mock = null)
     {
         $sns = m::mock(SnsClient::class, $mock);
 

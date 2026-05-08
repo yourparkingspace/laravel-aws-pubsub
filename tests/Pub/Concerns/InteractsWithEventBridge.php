@@ -32,7 +32,7 @@ trait InteractsWithEventBridge
      * @param  Closure|null  $mock
      * @return void
      */
-    private function mockEventBridge(Closure $mock = null)
+    private function mockEventBridge(?Closure $mock = null)
     {
         $eventBridge = m::mock(EventBridgeClient::class, $mock);
 
